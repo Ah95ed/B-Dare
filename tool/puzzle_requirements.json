@@ -1,0 +1,29 @@
+{
+  "globalMinPerRepresentation": 1,
+  "categories": [
+    {
+      "name": "General Knowledge",
+      "minTotal": 1,
+      "minPerRepresentation": 1,
+      "requiredRepresentations": ["text"]
+    },
+    {
+      "name": "Science & Technology",
+      "minTotal": 1,
+      "minPerRepresentation": 1,
+      "requiredRepresentations": ["icon"]
+    },
+    {
+      "name": "Nature & Environment",
+      "minTotal": 1,
+      "minPerRepresentation": 1,
+      "requiredRepresentations": ["image"]
+    },
+    {
+      "name": "Sports & Health",
+      "minTotal": 1,
+      "minPerRepresentation": 1,
+      "requiredRepresentations": ["event"]
+    }
+  ]
+}

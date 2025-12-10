@@ -1,0 +1,246 @@
+{
+  "@@locale": "pl",
+  "appName": "Tajemnicze Połączenie",
+  "@appName": {
+    "description": "The application name"
+  },
+  "soloMode": "Tryb Solo",
+  "groupMode": "Tryb Grupowy",
+  "practiceMode": "Tryb Treningowy",
+  "startGame": "Rozpocznij Grę",
+  "selectDifficulty": "Wybierz Poziom Trudności",
+  "selectRepresentation": "Wybierz Typ Reprezentacji",
+  "text": "Tekst",
+  "icon": "Ikona",
+  "image": "Obraz",
+  "event": "Wydarzenie",
+  "links": "Połączenia",
+  "timeRemaining": "Pozostały Czas",
+  "step": "Krok",
+  "ofLabel": "z",
+  "correct": "Poprawnie!",
+  "wrong": "Niepoprawnie!",
+  "timeOut": "Czas Minął!",
+  "score": "Wynik",
+  "timeSpent": "Spędzony Czas",
+  "correctChain": "Poprawny Łańcuch",
+  "yourChoices": "Twoje Wybory",
+  "playAgain": "Zagraj Ponownie",
+  "share": "Udostępnij",
+  "backToHome": "Powrót do Strony Głównej",
+  "selectPlayers": "Wybierz Liczbę Graczy",
+  "player": "Gracz",
+  "points": "Punkty",
+  "nextPlayer": "Następny Gracz",
+  "gameOver": "Koniec Gry",
+  "loading": "Ładowanie...",
+  "error": "Błąd",
+  "retry": "Spróbuj Ponownie",
+  "perfectWin": "Doskonale! Poprawnie ukończyłeś łańcuch!",
+  "@perfectWin": {
+    "description": "Message shown when player completes puzzle with all correct answers"
+  },
+  "timeUpMessage": "Czas minął! Nie martw się, możesz spróbować ponownie.",
+  "@timeUpMessage": {
+    "description": "Message shown when time runs out"
+  },
+  "tieMessage": "Remis! Świetna gra, wszyscy!",
+  "@tieMessage": {
+    "description": "Message shown when players tie in group mode"
+  },
+  "helpText": "Znajdź połączenie, które łączy aktualną kartę z celem. Pomyśl o relacji między nimi.",
+  "@helpText": {
+    "description": "Help text for beginners"
+  },
+  "guidedModeHint": "Przeczytaj podpowiedź przed wyborem: Szukaj połączenia, które łączy aktualną kartę z celem.",
+  "@guidedModeHint": {
+    "description": "Hint shown in guided mode"
+  },
+  "wellDone": "Dobra robota!",
+  "@wellDone": {
+    "description": "Encouragement message"
+  },
+  "keepTrying": "Kontynuuj próby! Stajesz się lepszy!",
+  "@keepTrying": {
+    "description": "Encouragement message after wrong answer"
+  },
+  "excellent": "Doskonale!",
+  "@excellent": {
+    "description": "Praise message"
+  },
+  "goodJob": "Dobra robota!",
+  "@goodJob": {
+    "description": "Praise message"
+  },
+  "almostThere": "Prawie gotowe!",
+  "@almostThere": {
+    "description": "Encouragement when close to correct answer"
+  },
+  "thinkAgain": "Pomyśl ponownie. Co łączy te dwa?",
+  "@thinkAgain": {
+    "description": "Hint when answer is wrong"
+  },
+  "accessibilityAndLanguage": "Dostępność i Język",
+  "@accessibilityAndLanguage": {
+    "description": "Settings section title"
+  },
+  "language": "Język",
+  "@language": {
+    "description": "Label for language selection"
+  },
+  "textSize": "Rozmiar Tekstu",
+  "@textSize": {
+    "description": "Label for text size"
+  },
+  "themeMode": "Tryb Motywu",
+  "@themeMode": {
+    "description": "Theme selection label"
+  },
+  "systemTheme": "System",
+  "@systemTheme": {
+    "description": "System default theme option"
+  },
+  "lightThemeOption": "Jasny",
+  "@lightThemeOption": {
+    "description": "Light theme option label"
+  },
+  "darkThemeOption": "Ciemny",
+  "@darkThemeOption": {
+    "description": "Dark theme option label"
+  },
+  "dynamicColors": "Dynamiczne Kolory",
+  "@dynamicColors": {
+    "description": "Label for dynamic color setting"
+  },
+  "dynamicColorsSubtitle": "Połącz interfejs z adaptacyjnymi gradientami i podświetleniami.",
+  "@dynamicColorsSubtitle": {
+    "description": "Subtitle for dynamic color setting"
+  },
+  "motionEffects": "Ruch i Animacje",
+  "@motionEffects": {
+    "description": "Label for motion effects toggle"
+  },
+  "motionEffectsSubtitle": "Wyłącz animacje, jeśli preferujesz spokojniejszy interfejs.",
+  "@motionEffectsSubtitle": {
+    "description": "Subtitle for motion effects toggle"
+  },
+  "liveTournamentFeed": "Na Żywo Kanał Turniejowy",
+  "@liveTournamentFeed": {
+    "description": "Title for live tournament ticker"
+  },
+  "liveTournamentFeedEmpty": "Na żywo drabinki i iskry meczów pojawią się tutaj, gdy turnieje się rozpoczną.",
+  "@liveTournamentFeedEmpty": {
+    "description": "Empty state message for live ticker"
+  },
+  "futurePlaybook": "Przyszłościowy Playbook",
+  "@futurePlaybook": {
+    "description": "Title for future trends card"
+  },
+  "futurePlaybookSubtitle": "Nadchodzące trendy przygotowane na następną dekadę",
+  "@futurePlaybookSubtitle": {
+    "description": "Subtitle for future trends card"
+  },
+  "levelsChallenges": "Poziomy i Wyzwania",
+  "levelsChallengesSubtitle": "Przeglądaj ustrukturyzowane poziomy i ich wyzwania",
+  "close": "Zamknij",
+  "@close": {
+    "description": "Button to close"
+  },
+  "brainGymCurrentStreak": "Your current streak: {streak} days",
+  "brainGymNewRoundHeadline": "Great! New Brain Gym round",
+  "brainGymPerfectRoundHeadline": "💪 Perfect round!",
+  "brainGymRoundProgress": "Round {current} of {total} · Session score: {score}",
+  "brainGymSessionCompletedFinal": "🎯 You finished your Brain Gym session!",
+  "brainGymStartNewStreak": "Start a new streak today",
+  "brainGymStartNow": "Start Brain Gym now",
+  "brainGymTotalSessions": "Total training sessions: {total}",
+  "createGroupDescription": "Create a group game with friends",
+  "createGroupTitle": "Create Group",
+  "dailySessionStatusCompleted": "You finished today’s session! {streak} day streak",
+  "dailySessionStatusNotStarted": "You haven’t started today’s session yet · Current streak: {streak} days",
+  "dailySessionTotalSessions": "Total sessions: {count}",
+  "familyNoSessionYet": "Start your first family session today!",
+  "familySessionsTitleDefault": "Family sessions",
+  "familySessionsTitleWithProfile": "{profile} sessions",
+  "familyStartNewSession": "Start new session",
+  "familyWeeklyGoal": "This week’s goal: win 3 family sessions. Current progress {wins}/3.",
+  "familyWinsSessionsSummary": "Wins: {wins} / Sessions: {sessions}",
+  "globalTournamentsDescription": "Join global tournaments and become world champion",
+  "globalTournamentsTitle": "Global Tournaments",
+  "guidedModeDescription": "Simplified steps and hints for younger players and beginners.",
+  "guidedModeTitle": "Guided Mode",
+  "keepPlayingToMaintainProgress": "Keep playing to maintain your progress!",
+  "lastSessionLabel": "Last session",
+  "progressKeepPlayingHint": "Keep playing to keep your momentum!",
+  "sessionsLabel": "Sessions",
+  "soloModeDescription": "Play alone and challenge yourself",
+  "winsLabel": "Wins",
+  "back": "Back",
+  "familySessionTitleInGame": "Family session",
+  "familySessionTitleWithProfileInGame": "{profile} team",
+  "guidedModeIntroStep1": "Listen to the short instructions, then read the start and end points.",
+  "guidedModeIntroStep2": "Choose the correct link from three simplified options.",
+  "guidedModeIntroStep3": "If you make a mistake, you will get an instant hint to help next time.",
+  "guidedModeLongDescription": "An experience suitable for younger players and new users. This mode focuses on short chains with visual and audio hints.",
+  "guidedModeStartSession": "Start guided session",
+  "lastSessionShort": "Last session",
+  "lossesShortLabel": "Losses",
+  "matchJoinFailed": "Failed to join match: {error}",
+  "matchNotReady": "Match is not ready yet",
+  "matchStartFailed": "Failed to start match: {error}",
+  "matchesLabel": "Matches",
+  "relativeDays": "{days} d",
+  "relativeHours": "{hours} h",
+  "relativeInDays": "In {days} days",
+  "relativeInHours": "In {hours} hours",
+  "relativeInMinutes": "In {minutes} minutes",
+  "relativeMinutes": "{minutes} min",
+  "relativeNow": "Now",
+  "relativeStarted": "Started",
+  "selectGameTypeTitle": "Choose game type",
+  "sessionsShortLabel": "Sessions",
+  "stageRoundProgress": "Round {current}/{total}",
+  "stageStatusCompleted": "Completed",
+  "stageStatusInProgress": "In progress",
+  "stageStatusNotStarted": "Not started",
+  "tournamentBracketTitle": "Bracket",
+  "tournamentBracketUnavailable": "Bracket is not available yet",
+  "tournamentCreateNew": "Create new tournament",
+  "tournamentEmptyTitle": "No tournaments at the moment",
+  "tournamentFilterAll": "All",
+  "tournamentFilterCompleted": "Completed",
+  "tournamentFilterFinal": "Final",
+  "tournamentFilterLabel": "Filter:",
+  "tournamentFilterQualifiers": "Qualifiers",
+  "tournamentFilterRegistration": "Registration",
+  "tournamentGlobalTitle": "Global Tournaments",
+  "tournamentMatchStatusCancelled": "Cancelled",
+  "tournamentMatchStatusCompleted": "Completed",
+  "tournamentMatchStatusForfeit": "Forfeit",
+  "tournamentMatchStatusInProgress": "In progress",
+  "tournamentMatchStatusScheduled": "Scheduled",
+  "tournamentNoTournaments": "No tournaments",
+  "tournamentStagesSectionTitle": "Stages",
+  "tournamentStart": "Start tournament",
+  "tournamentStatsStages": "Stages",
+  "tournamentStatsTeams": "Teams",
+  "tournamentStatsType": "Type",
+  "tournamentStatusCancelled": "Cancelled",
+  "tournamentStatusCompleted": "Completed",
+  "tournamentStatusFinal": "Final",
+  "tournamentStatusPlayoffs": "Playoffs",
+  "tournamentStatusQualifiers": "Qualifiers",
+  "tournamentStatusRegistration": "Registration",
+  "tournamentTeamsSectionTitle": "Teams ({count}/{max})",
+  "tournamentTypeDoubleElimination": "Double Elimination",
+  "tournamentTypeRoundRobin": "Round Robin",
+  "tournamentTypeSingleElimination": "Single Elimination",
+  "tournamentTypeSwiss": "Swiss",
+  "tournamentViewAllTeams": "View all teams ({count})",
+  "tournamentViewBracket": "View bracket",
+  "winsShortLabel": "Wins",
+  "samplePuzzleLoaded": "Loaded a practice puzzle",
+  "matchJoin": "Join match",
+  "matchStart": "Start match",
+  "matchTitle": "Match"
+}

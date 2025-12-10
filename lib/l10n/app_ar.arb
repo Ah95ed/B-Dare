@@ -1,0 +1,622 @@
+{
+  "@@locale": "ar",
+  "appName": "رابط الغموض",
+  "@appName": {
+    "description": "اسم التطبيق"
+  },
+  "soloMode": "وضع فردي",
+  "groupMode": "وضع جماعي",
+  "practiceMode": "وضع التدريب",
+  "startGame": "بدء اللعبة",
+  "selectDifficulty": "اختر الصعوبة",
+  "selectRepresentation": "اختر نوع العرض",
+  "text": "نص",
+  "icon": "رمز",
+  "image": "صورة",
+  "event": "حدث",
+  "links": "روابط",
+  "timeRemaining": "الوقت المتبقي",
+  "step": "خطوة",
+  "ofLabel": "من",
+  "correct": "صحيح!",
+  "wrong": "خطأ!",
+  "timeOut": "انتهى الوقت!",
+  "score": "النقاط",
+  "timeSpent": "الوقت المستغرق",
+  "correctChain": "السلسلة الصحيحة",
+  "yourChoices": "اختياراتك",
+  "playAgain": "لعب مرة أخرى",
+  "share": "مشاركة",
+  "backToHome": "العودة للرئيسية",
+  "selectPlayers": "اختر عدد اللاعبين",
+  "player": "لاعب",
+  "points": "نقاط",
+  "nextPlayer": "اللاعب التالي",
+  "gameOver": "انتهت اللعبة",
+  "loading": "جاري التحميل...",
+  "error": "خطأ",
+  "retry": "إعادة المحاولة",
+  "perfectWin": "ممتاز! أكملت السلسلة بشكل صحيح!",
+  "@perfectWin": {
+    "description": "رسالة تظهر عند إكمال اللغز بكل الإجابات الصحيحة"
+  },
+  "timeUpMessage": "انتهى الوقت! لا تقلق، يمكنك المحاولة مرة أخرى.",
+  "@timeUpMessage": {
+    "description": "رسالة تظهر عند انتهاء الوقت"
+  },
+  "tieMessage": "تعادل! لعبة رائعة للجميع!",
+  "@tieMessage": {
+    "description": "رسالة تظهر عند التعادل في الوضع الجماعي"
+  },
+  "helpText": "ابحث عن الرابط الذي يربط البطاقة الحالية بالهدف. فكر في العلاقة بينهما.",
+  "@helpText": {
+    "description": "نص مساعدة للمبتدئين"
+  },
+  "guidedModeHint": "اقرأ التلميح قبل الاختيار: ابحث عن الرابط الذي يربط البطاقة الحالية بالهدف.",
+  "@guidedModeHint": {
+    "description": "تلميح يظهر في الوضع الموجه"
+  },
+  "wellDone": "أحسنت!",
+  "@wellDone": {
+    "description": "رسالة تشجيع"
+  },
+  "keepTrying": "استمر في المحاولة! أنت تتحسن!",
+  "@keepTrying": {
+    "description": "رسالة تشجيع بعد إجابة خاطئة"
+  },
+  "excellent": "ممتاز!",
+  "@excellent": {
+    "description": "رسالة مدح"
+  },
+  "goodJob": "عمل جيد!",
+  "@goodJob": {
+    "description": "رسالة مدح"
+  },
+  "almostThere": "أنت قريب!",
+  "@almostThere": {
+    "description": "تشجيع عند الاقتراب من الإجابة الصحيحة"
+  },
+  "thinkAgain": "فكر مرة أخرى. ما الذي يربط بين هذين؟",
+  "@thinkAgain": {
+    "description": "تلميح عند الإجابة الخاطئة"
+  },
+  "accessibilityAndLanguage": "إمكانية الوصول واللغة",
+  "@accessibilityAndLanguage": {
+    "description": "عنوان قسم الإعدادات"
+  },
+  "language": "اللغة",
+  "@language": {
+    "description": "تسمية لاختيار اللغة"
+  },
+  "textSize": "حجم النص",
+  "@textSize": {
+    "description": "تسمية لحجم النص"
+  },
+  "themeMode": "مظهر التطبيق",
+  "systemTheme": "النظام",
+  "lightThemeOption": "فاتح",
+  "darkThemeOption": "داكن",
+  "dynamicColors": "ألوان ديناميكية",
+  "dynamicColorsSubtitle": "ادمج الواجهة مع تدرجات وأضواء متغيرة حسب حالتك.",
+  "motionEffects": "الحركة والمؤثرات",
+  "motionEffectsSubtitle": "أوقف التحريكات إذا كنت تفضل تجربة أكثر هدوءًا.",
+  "liveTournamentFeed": "بث البطولات الحي",
+  "liveTournamentFeedEmpty": "سيظهر سير المباريات هنا فور انطلاق البطولات.",
+  "futurePlaybook": "مفكرة المستقبل",
+  "futurePlaybookSubtitle": "اتجاهات وتجارب جاهزة للعشر سنوات القادمة",
+  "levelsChallenges": "المستويات والتحديات",
+  "levelsChallengesSubtitle": "اختر المستوى والتحدي قبل بدء اللعب",
+  "close": "إغلاق",
+  "@close": {
+    "description": "زر للإغلاق"
+  },
+  "dailySessionStatusCompleted": "أنهيت جلسة اليوم! سلسلة {streak} يوم",
+  "@dailySessionStatusCompleted": {
+    "description": "Status text when daily session is completed",
+    "placeholders": {
+      "streak": {
+        "type": "int"
+      }
+    }
+  },
+  "dailySessionStatusNotStarted": "لم تبدأ جلسة اليوم بعد · سلسلة حالية: {streak} يوم",
+  "@dailySessionStatusNotStarted": {
+    "description": "Status text when daily session not started",
+    "placeholders": {
+      "streak": {
+        "type": "int"
+      }
+    }
+  },
+  "dailySessionTotalSessions": "إجمالي الجلسات: {count}",
+  "@dailySessionTotalSessions": {
+    "description": "Total number of sessions played",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "brainGymStartNow": "ابدأ Brain Gym الآن",
+  "@brainGymStartNow": {
+    "description": "CTA button to start Brain Gym session"
+  },
+  "familySessionsTitleWithProfile": "جلسات {profile}",
+  "@familySessionsTitleWithProfile": {
+    "description": "Title for family sessions card with profile name",
+    "placeholders": {
+      "profile": {
+        "type": "String"
+      }
+    }
+  },
+  "familySessionsTitleDefault": "جلسات العائلة",
+  "@familySessionsTitleDefault": {
+    "description": "Default title for family sessions card"
+  },
+  "sessionsLabel": "الجلسات",
+  "@sessionsLabel": {
+    "description": "Label for sessions count"
+  },
+  "winsLabel": "الانتصارات",
+  "@winsLabel": {
+    "description": "Label for wins count"
+  },
+  "lastSessionLabel": "آخر جلسة",
+  "@lastSessionLabel": {
+    "description": "Label for last session date"
+  },
+  "familyWeeklyGoal": "هدف هذا الأسبوع: اربحوا 3 جلسات عائلية. التقدم الحالي {wins}/3.",
+  "@familyWeeklyGoal": {
+    "description": "Weekly family goal text",
+    "placeholders": {
+      "wins": {
+        "type": "int"
+      }
+    }
+  },
+  "familyWinsSessionsSummary": "انتصارات: {wins} / جلسات: {sessions}",
+  "@familyWinsSessionsSummary": {
+    "description": "Summary of wins and sessions for family stats",
+    "placeholders": {
+      "wins": {
+        "type": "int"
+      },
+      "sessions": {
+        "type": "int"
+      }
+    }
+  },
+  "familyNoSessionYet": "ابدأوا أول جلسة لكم اليوم!",
+  "@familyNoSessionYet": {
+    "description": "Message shown when no family session yet"
+  },
+  "familyStartNewSession": "ابدأ جلسة جديدة",
+  "@familyStartNewSession": {
+    "description": "Button label to start a new family session"
+  },
+  "keepPlayingToMaintainProgress": "استمر في اللعب للحفاظ على تقدمك!",
+  "@keepPlayingToMaintainProgress": {
+    "description": "Encouragement text when progression goals are clear"
+  },
+  "guidedModeTitle": "الوضع الموجّه",
+  "@guidedModeTitle": {
+    "description": "Title for guided mode item"
+  },
+  "guidedModeDescription": "خطوات مبسّطة وتلميحات للأعمار الصغيرة والمبتدئين.",
+  "@guidedModeDescription": {
+    "description": "Description for guided mode"
+  },
+  "soloModeDescription": "العب منفرداً وتحدَّ نفسك",
+  "@soloModeDescription": {
+    "description": "Description under Solo mode"
+  },
+  "createGroupTitle": "إنشاء مجموعة",
+  "@createGroupTitle": {
+    "description": "Title for create group mode"
+  },
+  "createGroupDescription": "أنشئ لعبة جماعية مع الأصدقاء",
+  "@createGroupDescription": {
+    "description": "Description for create group mode"
+  },
+  "globalTournamentsTitle": "المسابقات العالمية",
+  "@globalTournamentsTitle": {
+    "description": "Title for global tournaments section"
+  },
+  "globalTournamentsDescription": "شارك في المسابقات العالمية وكن بطل العالم",
+  "@globalTournamentsDescription": {
+    "description": "Description for global tournaments CTA"
+  },
+  "progressKeepPlayingHint": "تابع التحديات اليومية والإنجازات الجديدة لتحافظ على حماسك.",
+  "@progressKeepPlayingHint": {
+    "description": "Hint encouraging user to keep playing to progress"
+  },
+  "brainGymSessionCompletedFinal": "🎯 انهيت جلسة Brain Gym!",
+  "@brainGymSessionCompletedFinal": {
+    "description": "Headline when Brain Gym session is finished"
+  },
+  "brainGymPerfectRoundHeadline": "💪 جولة مثالية!",
+  "@brainGymPerfectRoundHeadline": {
+    "description": "Headline when the last round was perfect"
+  },
+  "brainGymNewRoundHeadline": "أحسنت! جولة Brain Gym جديدة",
+  "@brainGymNewRoundHeadline": {
+    "description": "Headline for a regular Brain Gym round"
+  },
+  "brainGymCurrentStreak": "سلسلتك الحالية: {streak} يوم",
+  "@brainGymCurrentStreak": {
+    "description": "Text showing current Brain Gym streak",
+    "placeholders": {
+      "streak": {
+        "type": "int"
+      }
+    }
+  },
+  "brainGymStartNewStreak": "ابدأ سلسلة جديدة اليوم",
+  "@brainGymStartNewStreak": {
+    "description": "Text inviting user to start a new streak"
+  },
+  "brainGymRoundProgress": "Round {current} of {total} · Session score: {score}",
+  "@brainGymRoundProgress": {
+    "description": "Round progress text for Brain Gym",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "brainGymTotalSessions": "إجمالي جلسات التدريب: {total}",
+  "@brainGymTotalSessions": {
+    "description": "Total Brain Gym sessions completed",
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "guidedModeIntroStep1": "استمع للتعليمات القصيرة ثم اقرأ نقطة البداية والنهاية.",
+  "@guidedModeIntroStep1": {
+    "description": "Guided mode step 1"
+  },
+  "guidedModeIntroStep2": "اختر الرابط الصحيح من بين ثلاثة خيارات مبسّطة.",
+  "@guidedModeIntroStep2": {
+    "description": "Guided mode step 2"
+  },
+  "guidedModeIntroStep3": "إن أخطأت ستحصل على تلميح فوري يساعدك في المحاولة القادمة.",
+  "@guidedModeIntroStep3": {
+    "description": "Guided mode step 3"
+  },
+  "guidedModeLongDescription": "تجربة مناسبة للأعمار الصغيرة والمستخدمين الجدد. يركّز هذا الوضع على سلاسل قصيرة مع تلميحات مرئية وصوتية.",
+  "@guidedModeLongDescription": {
+    "description": "Long description for guided mode intro screen"
+  },
+  "guidedModeStartSession": "ابدأ الجلسة الموجهة",
+  "@guidedModeStartSession": {
+    "description": "Button label to start guided session"
+  },
+  "selectGameTypeTitle": "اختر نوع اللعبة",
+  "@selectGameTypeTitle": {
+    "description": "Title above game type selector"
+  },
+  "familySessionTitleWithProfileInGame": "فريق {profile}",
+  "@familySessionTitleWithProfileInGame": {
+    "description": "Title in game screen when playing family session with profile name",
+    "placeholders": {
+      "profile": {
+        "type": "String"
+      }
+    }
+  },
+  "familySessionTitleInGame": "جلسة العائلة",
+  "@familySessionTitleInGame": {
+    "description": "Default family session title in game screen"
+  },
+  "sessionsShortLabel": "جلسات",
+  "@sessionsShortLabel": {
+    "description": "Short label for sessions (stats chips)"
+  },
+  "winsShortLabel": "انتصارات",
+  "@winsShortLabel": {
+    "description": "Short label for wins (stats chips)"
+  },
+  "lossesShortLabel": "خسائر",
+  "@lossesShortLabel": {
+    "description": "Short label for losses (stats chips)"
+  },
+  "lastSessionShort": "اخر جلسة",
+  "@lastSessionShort": {
+    "description": "Short label for last session in game screen"
+  },
+  "relativeMinutes": "{minutes} دقيقة",
+  "@relativeMinutes": {
+    "description": "Relative time in minutes",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "relativeHours": "{hours} ساعة",
+  "@relativeHours": {
+    "description": "Relative time in hours",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "relativeDays": "{days} يوم",
+  "@relativeDays": {
+    "description": "Relative time in days",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "matchNotReady": "المباراة غير جاهزة بعد",
+  "@matchNotReady": {
+    "description": "Error when match is not ready"
+  },
+  "matchStartFailed": "فشل بدء المباراة: {error}",
+  "@matchStartFailed": {
+    "description": "Error when starting match fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "matchJoinFailed": "فشل الانضمام للمباراة: {error}",
+  "@matchJoinFailed": {
+    "description": "Error when joining match fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "tournamentGlobalTitle": "المسابقات العالمية",
+  "@tournamentGlobalTitle": {
+    "description": "App bar title for tournament dashboard"
+  },
+  "tournamentNoTournaments": "لا توجد مسابقات",
+  "@tournamentNoTournaments": {
+    "description": "Message when there are no tournaments in builder"
+  },
+  "tournamentFilterLabel": "التصفية:",
+  "@tournamentFilterLabel": {
+    "description": "Label before tournament filter chips"
+  },
+  "tournamentFilterAll": "الكل",
+  "@tournamentFilterAll": {
+    "description": "Filter chip - all"
+  },
+  "tournamentFilterRegistration": "التسجيل",
+  "@tournamentFilterRegistration": {
+    "description": "Filter chip - registration"
+  },
+  "tournamentFilterQualifiers": "التصفيات",
+  "@tournamentFilterQualifiers": {
+    "description": "Filter chip - qualifiers"
+  },
+  "tournamentFilterFinal": "النهائي",
+  "@tournamentFilterFinal": {
+    "description": "Filter chip - final"
+  },
+  "tournamentFilterCompleted": "مكتملة",
+  "@tournamentFilterCompleted": {
+    "description": "Filter chip - completed"
+  },
+  "tournamentEmptyTitle": "لا توجد مسابقات حالياً",
+  "@tournamentEmptyTitle": {
+    "description": "Title when tournaments list is empty"
+  },
+  "tournamentCreateNew": "إنشاء بطولة جديدة",
+  "@tournamentCreateNew": {
+    "description": "Button label to create new tournament"
+  },
+  "tournamentStagesSectionTitle": "المراحل",
+  "@tournamentStagesSectionTitle": {
+    "description": "Title for stages section"
+  },
+  "tournamentTeamsSectionTitle": "الفرق ({count}/{max})",
+  "@tournamentTeamsSectionTitle": {
+    "description": "Title for teams section with counts",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "tournamentViewAllTeams": "عرض جميع الفرق ({count})",
+  "@tournamentViewAllTeams": {
+    "description": "Button text to view all teams",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tournamentBracketTitle": "شجرة التصفيات",
+  "@tournamentBracketTitle": {
+    "description": "Title for bracket section"
+  },
+  "tournamentBracketUnavailable": "شجرة التصفيات غير متاحة بعد",
+  "@tournamentBracketUnavailable": {
+    "description": "Message when bracket is unavailable"
+  },
+  "tournamentViewBracket": "عرض شجرة التصفيات",
+  "@tournamentViewBracket": {
+    "description": "Button to view bracket"
+  },
+  "tournamentStart": "بدء البطولة",
+  "@tournamentStart": {
+    "description": "Button to start tournament"
+  },
+  "back": "رجوع",
+  "@back": {
+    "description": "Generic back button label"
+  },
+  "tournamentStatusRegistration": "التسجيل",
+  "@tournamentStatusRegistration": {
+    "description": "Status label for registration"
+  },
+  "tournamentStatusQualifiers": "التصفيات",
+  "@tournamentStatusQualifiers": {
+    "description": "Status label for qualifiers"
+  },
+  "tournamentStatusPlayoffs": "التصفيات النهائية",
+  "@tournamentStatusPlayoffs": {
+    "description": "Status label for playoffs/final stage"
+  },
+  "tournamentStatusFinal": "النهائي",
+  "@tournamentStatusFinal": {
+    "description": "Status label for final stage"
+  },
+  "tournamentStatusCompleted": "مكتملة",
+  "@tournamentStatusCompleted": {
+    "description": "Status label for completed tournaments"
+  },
+  "tournamentStatusCancelled": "ملغاة",
+  "@tournamentStatusCancelled": {
+    "description": "Status label for cancelled tournaments"
+  },
+  "tournamentMatchStatusScheduled": "مجدولة",
+  "@tournamentMatchStatusScheduled": {
+    "description": "Match status scheduled"
+  },
+  "tournamentMatchStatusInProgress": "قيد التقدم",
+  "@tournamentMatchStatusInProgress": {
+    "description": "Match status in progress"
+  },
+  "tournamentMatchStatusCompleted": "مكتملة",
+  "@tournamentMatchStatusCompleted": {
+    "description": "Match status completed"
+  },
+  "tournamentMatchStatusForfeit": "إلغاء",
+  "@tournamentMatchStatusForfeit": {
+    "description": "Match status forfeit"
+  },
+  "tournamentMatchStatusCancelled": "ملغاة",
+  "@tournamentMatchStatusCancelled": {
+    "description": "Match status cancelled"
+  },
+  "tournamentStatsTeams": "الفرق",
+  "@tournamentStatsTeams": {
+    "description": "Label for teams stat"
+  },
+  "tournamentStatsStages": "المراحل",
+  "@tournamentStatsStages": {
+    "description": "Label for stages stat"
+  },
+  "tournamentStatsType": "النوع",
+  "@tournamentStatsType": {
+    "description": "Label for type stat"
+  },
+  "tournamentTypeSingleElimination": "إقصاء فردي",
+  "@tournamentTypeSingleElimination": {
+    "description": "Tournament type single elimination"
+  },
+  "tournamentTypeDoubleElimination": "إقصاء مزدوج",
+  "@tournamentTypeDoubleElimination": {
+    "description": "Tournament type double elimination"
+  },
+  "tournamentTypeSwiss": "سويسري",
+  "@tournamentTypeSwiss": {
+    "description": "Tournament type Swiss"
+  },
+  "tournamentTypeRoundRobin": "دوري",
+  "@tournamentTypeRoundRobin": {
+    "description": "Tournament type round robin"
+  },
+  "stageRoundProgress": "الجولة {current}/{total}",
+  "@stageRoundProgress": {
+    "description": "Stage round progress label",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "matchesLabel": "مباريات",
+  "@matchesLabel": {
+    "description": "Label for number of matches"
+  },
+  "stageStatusNotStarted": "لم تبدأ",
+  "@stageStatusNotStarted": {
+    "description": "Stage status not started"
+  },
+  "stageStatusInProgress": "جارية",
+  "@stageStatusInProgress": {
+    "description": "Stage status in progress"
+  },
+  "stageStatusCompleted": "مكتملة",
+  "@stageStatusCompleted": {
+    "description": "Stage status completed"
+  },
+  "relativeInDays": "بعد {days} يوم",
+  "@relativeInDays": {
+    "description": "Relative time in days (future)",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "relativeInHours": "بعد {hours} ساعة",
+  "@relativeInHours": {
+    "description": "Relative time in hours (future)",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "relativeInMinutes": "بعد {minutes} دقيقة",
+  "@relativeInMinutes": {
+    "description": "Relative time in minutes (future)",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "relativeStarted": "بدأت",
+  "@relativeStarted": {
+    "description": "Label when event has started"
+  },
+  "relativeNow": "الآن",
+  "@relativeNow": {
+    "description": "Label for now"
+  },
+  "matchTitle": "المباراة",
+  "@matchTitle": {
+    "description": "Title for match screen"
+  },
+  "matchStart": "بدء المباراة",
+  "@matchStart": {
+    "description": "Button label to start match"
+  },
+  "matchJoin": "الانضمام للمباراة",
+  "@matchJoin": {
+    "description": "Button label to join match"
+  },
+  "samplePuzzleLoaded": "تم تحميل لغز تدريبي",
+  "@samplePuzzleLoaded": {
+    "description": "Message shown when a practice puzzle is loaded"
+  }
+}
+

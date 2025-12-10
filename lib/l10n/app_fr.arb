@@ -1,0 +1,621 @@
+{
+  "@@locale": "fr",
+  "appName": "Lien Mystère",
+  "@appName": {
+    "description": "Le nom de l'application"
+  },
+  "soloMode": "Mode Solo",
+  "groupMode": "Mode Groupe",
+  "practiceMode": "Mode Pratique",
+  "startGame": "Démarrer le Jeu",
+  "selectDifficulty": "Sélectionner la Difficulté",
+  "selectRepresentation": "Sélectionner le Type de Représentation",
+  "text": "Texte",
+  "icon": "Icône",
+  "image": "Image",
+  "event": "Événement",
+  "links": "Liens",
+  "timeRemaining": "Temps Restant",
+  "step": "Étape",
+  "ofLabel": "de",
+  "correct": "Correct !",
+  "wrong": "Incorrect !",
+  "timeOut": "Le Temps est Écoulé !",
+  "score": "Score",
+  "timeSpent": "Temps Passé",
+  "correctChain": "Chaîne Correcte",
+  "yourChoices": "Vos Choix",
+  "playAgain": "Rejouer",
+  "share": "Partager",
+  "backToHome": "Retour à l'Accueil",
+  "selectPlayers": "Sélectionner le Nombre de Joueurs",
+  "player": "Joueur",
+  "points": "Points",
+  "nextPlayer": "Joueur Suivant",
+  "gameOver": "Jeu Terminé",
+  "loading": "Chargement...",
+  "error": "Erreur",
+  "retry": "Réessayer",
+  "perfectWin": "Parfait ! Vous avez complété la chaîne correctement !",
+  "@perfectWin": {
+    "description": "Message affiché lorsque le joueur complète le puzzle avec toutes les réponses correctes"
+  },
+  "timeUpMessage": "Le temps est écoulé ! Ne vous inquiétez pas, vous pouvez réessayer.",
+  "@timeUpMessage": {
+    "description": "Message affiché lorsque le temps est écoulé"
+  },
+  "tieMessage": "C'est une égalité ! Excellent jeu à tous !",
+  "@tieMessage": {
+    "description": "Message affiché lorsque les joueurs sont à égalité en mode groupe"
+  },
+  "helpText": "Trouvez le lien qui connecte la carte actuelle à l'objectif. Pensez à la relation entre eux.",
+  "@helpText": {
+    "description": "Texte d'aide pour les débutants"
+  },
+  "guidedModeHint": "Lisez l'indice avant de choisir : Cherchez le lien qui connecte la carte actuelle à la cible.",
+  "@guidedModeHint": {
+    "description": "Indice affiché en mode guidé"
+  },
+  "wellDone": "Bien joué !",
+  "@wellDone": {
+    "description": "Message d'encouragement"
+  },
+  "keepTrying": "Continuez d'essayer ! Vous vous améliorez !",
+  "@keepTrying": {
+    "description": "Message d'encouragement après une mauvaise réponse"
+  },
+  "excellent": "Excellent !",
+  "@excellent": {
+    "description": "Message de félicitations"
+  },
+  "goodJob": "Bon travail !",
+  "@goodJob": {
+    "description": "Message de félicitations"
+  },
+  "almostThere": "Presque là !",
+  "@almostThere": {
+    "description": "Encouragement lorsqu'on est proche de la bonne réponse"
+  },
+  "thinkAgain": "Réfléchissez à nouveau. Qu'est-ce qui connecte ces deux ?",
+  "@thinkAgain": {
+    "description": "Indice lorsque la réponse est incorrecte"
+  },
+  "accessibilityAndLanguage": "Accessibilité et Langue",
+  "@accessibilityAndLanguage": {
+    "description": "Titre de la section des paramètres"
+  },
+  "language": "Langue",
+  "@language": {
+    "description": "Libellé pour la sélection de langue"
+  },
+  "textSize": "Taille du Texte",
+  "@textSize": {
+    "description": "Libellé pour la taille du texte"
+  },
+  "themeMode": "Mode d’apparence",
+  "systemTheme": "Système",
+  "lightThemeOption": "Clair",
+  "darkThemeOption": "Sombre",
+  "dynamicColors": "Couleurs dynamiques",
+  "dynamicColorsSubtitle": "Fusionnez l’interface avec des dégradés adaptatifs.",
+  "motionEffects": "Mouvement et animations",
+  "motionEffectsSubtitle": "Désactivez les animations si vous préférez une interface calme.",
+  "liveTournamentFeed": "Flux de tournois en direct",
+  "liveTournamentFeedEmpty": "Les tableaux et matchs en direct apparaîtront ici lorsque les tournois commenceront.",
+  "futurePlaybook": "Carnet du futur",
+  "futurePlaybookSubtitle": "Tendances prévues pour la prochaine décennie",
+  "levelsChallenges": "Niveaux et défis",
+  "levelsChallengesSubtitle": "Parcourez les niveaux structurés avant de jouer",
+  "close": "Fermer",
+  "@close": {
+    "description": "Bouton pour fermer"
+  },
+  "dailySessionStatusCompleted": "Vous avez terminé la session d'aujourd'hui ! Série de {streak} jours",
+  "@dailySessionStatusCompleted": {
+    "description": "Status text when daily session is completed",
+    "placeholders": {
+      "streak": {
+        "type": "int"
+      }
+    }
+  },
+  "dailySessionStatusNotStarted": "Vous n'avez pas encore commencé la session d'aujourd'hui · Série actuelle : {streak} jours",
+  "@dailySessionStatusNotStarted": {
+    "description": "Status text when daily session not started",
+    "placeholders": {
+      "streak": {
+        "type": "int"
+      }
+    }
+  },
+  "dailySessionTotalSessions": "Total de sessions : {count}",
+  "@dailySessionTotalSessions": {
+    "description": "Total number of sessions played",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "brainGymStartNow": "Démarrer Brain Gym maintenant",
+  "@brainGymStartNow": {
+    "description": "CTA button to start Brain Gym session"
+  },
+  "familySessionsTitleWithProfile": "Sessions {profile}",
+  "@familySessionsTitleWithProfile": {
+    "description": "Title for family sessions card with profile name",
+    "placeholders": {
+      "profile": {
+        "type": "String"
+      }
+    }
+  },
+  "familySessionsTitleDefault": "Sessions familiales",
+  "@familySessionsTitleDefault": {
+    "description": "Default title for family sessions card"
+  },
+  "sessionsLabel": "Sessions",
+  "@sessionsLabel": {
+    "description": "Label for sessions count"
+  },
+  "winsLabel": "Victoires",
+  "@winsLabel": {
+    "description": "Label for wins count"
+  },
+  "lastSessionLabel": "Dernière session",
+  "@lastSessionLabel": {
+    "description": "Label for last session date"
+  },
+  "familyWeeklyGoal": "Objectif de cette semaine : gagner 3 sessions familiales. Progrès actuel {wins}/3.",
+  "@familyWeeklyGoal": {
+    "description": "Weekly family goal text",
+    "placeholders": {
+      "wins": {
+        "type": "int"
+      }
+    }
+  },
+  "familyWinsSessionsSummary": "Victoires : {wins} / Sessions : {sessions}",
+  "@familyWinsSessionsSummary": {
+    "description": "Summary of wins and sessions for family stats",
+    "placeholders": {
+      "wins": {
+        "type": "int"
+      },
+      "sessions": {
+        "type": "int"
+      }
+    }
+  },
+  "familyNoSessionYet": "Commencez votre première session familiale aujourd'hui !",
+  "@familyNoSessionYet": {
+    "description": "Message shown when no family session yet"
+  },
+  "familyStartNewSession": "Démarrer une nouvelle session",
+  "@familyStartNewSession": {
+    "description": "Button label to start a new family session"
+  },
+  "keepPlayingToMaintainProgress": "Continuez à jouer pour maintenir votre progression !",
+  "@keepPlayingToMaintainProgress": {
+    "description": "Encouragement text when progression goals are clear"
+  },
+  "guidedModeTitle": "Mode Guidé",
+  "@guidedModeTitle": {
+    "description": "Title for guided mode item"
+  },
+  "guidedModeDescription": "Étapes simplifiées et indices pour les joueurs plus jeunes et les débutants.",
+  "@guidedModeDescription": {
+    "description": "Description for guided mode"
+  },
+  "soloModeDescription": "Jouez seul et défiez-vous",
+  "@soloModeDescription": {
+    "description": "Description under Solo mode"
+  },
+  "createGroupTitle": "Créer un Groupe",
+  "@createGroupTitle": {
+    "description": "Title for create group mode"
+  },
+  "createGroupDescription": "Créez un jeu de groupe avec des amis",
+  "@createGroupDescription": {
+    "description": "Description for create group mode"
+  },
+  "globalTournamentsTitle": "Tournois Mondiaux",
+  "@globalTournamentsTitle": {
+    "description": "Title for global tournaments section"
+  },
+  "globalTournamentsDescription": "Rejoignez les tournois mondiaux et devenez champion du monde",
+  "@globalTournamentsDescription": {
+    "description": "Description for global tournaments CTA"
+  },
+  "progressKeepPlayingHint": "Continuez à jouer pour maintenir votre élan !",
+  "@progressKeepPlayingHint": {
+    "description": "Hint encouraging user to keep playing to progress"
+  },
+  "brainGymSessionCompletedFinal": "🎯 Vous avez terminé votre session Brain Gym !",
+  "@brainGymSessionCompletedFinal": {
+    "description": "Headline when Brain Gym session is finished"
+  },
+  "brainGymPerfectRoundHeadline": "💪 Ronde parfaite !",
+  "@brainGymPerfectRoundHeadline": {
+    "description": "Headline when the last round was perfect"
+  },
+  "brainGymNewRoundHeadline": "Super ! Nouvelle ronde Brain Gym",
+  "@brainGymNewRoundHeadline": {
+    "description": "Headline for a regular Brain Gym round"
+  },
+  "brainGymCurrentStreak": "Votre série actuelle : {streak} jours",
+  "@brainGymCurrentStreak": {
+    "description": "Text showing current Brain Gym streak",
+    "placeholders": {
+      "streak": {
+        "type": "int"
+      }
+    }
+  },
+  "brainGymStartNewStreak": "Commencez une nouvelle série aujourd'hui",
+  "@brainGymStartNewStreak": {
+    "description": "Text inviting user to start a new streak"
+  },
+  "brainGymRoundProgress": "Ronde {current} sur {total} · Score de session : {score}",
+  "@brainGymRoundProgress": {
+    "description": "Round progress text for Brain Gym",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "brainGymTotalSessions": "Total de sessions d'entraînement : {total}",
+  "@brainGymTotalSessions": {
+    "description": "Total Brain Gym sessions completed",
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "guidedModeIntroStep1": "Écoutez les instructions courtes, puis lisez les points de départ et d'arrivée.",
+  "@guidedModeIntroStep1": {
+    "description": "Guided mode step 1"
+  },
+  "guidedModeIntroStep2": "Choisissez le bon lien parmi trois options simplifiées.",
+  "@guidedModeIntroStep2": {
+    "description": "Guided mode step 2"
+  },
+  "guidedModeIntroStep3": "Si vous faites une erreur, vous obtiendrez un indice instantané pour vous aider la prochaine fois.",
+  "@guidedModeIntroStep3": {
+    "description": "Guided mode step 3"
+  },
+  "guidedModeLongDescription": "Une expérience adaptée aux joueurs plus jeunes et aux nouveaux utilisateurs. Ce mode se concentre sur des chaînes courtes avec des indices visuels et audio.",
+  "@guidedModeLongDescription": {
+    "description": "Long description for guided mode intro screen"
+  },
+  "guidedModeStartSession": "Démarrer la session guidée",
+  "@guidedModeStartSession": {
+    "description": "Button label to start guided session"
+  },
+  "selectGameTypeTitle": "Choisir le type de jeu",
+  "@selectGameTypeTitle": {
+    "description": "Title above game type selector"
+  },
+  "familySessionTitleWithProfileInGame": "Équipe {profile}",
+  "@familySessionTitleWithProfileInGame": {
+    "description": "Title in game screen when playing family session with profile name",
+    "placeholders": {
+      "profile": {
+        "type": "String"
+      }
+    }
+  },
+  "familySessionTitleInGame": "Session familiale",
+  "@familySessionTitleInGame": {
+    "description": "Default family session title in game screen"
+  },
+  "sessionsShortLabel": "Sessions",
+  "@sessionsShortLabel": {
+    "description": "Short label for sessions (stats chips)"
+  },
+  "winsShortLabel": "Victoires",
+  "@winsShortLabel": {
+    "description": "Short label for wins (stats chips)"
+  },
+  "lossesShortLabel": "Défaites",
+  "@lossesShortLabel": {
+    "description": "Short label for losses (stats chips)"
+  },
+  "lastSessionShort": "Dernière session",
+  "@lastSessionShort": {
+    "description": "Short label for last session in game screen"
+  },
+  "relativeMinutes": "{minutes} min",
+  "@relativeMinutes": {
+    "description": "Relative time in minutes",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "relativeHours": "{hours} h",
+  "@relativeHours": {
+    "description": "Relative time in hours",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "relativeDays": "{days} j",
+  "@relativeDays": {
+    "description": "Relative time in days",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "matchNotReady": "Le match n'est pas encore prêt",
+  "@matchNotReady": {
+    "description": "Error when match is not ready"
+  },
+  "matchStartFailed": "Échec du démarrage du match : {error}",
+  "@matchStartFailed": {
+    "description": "Error when starting match fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "matchJoinFailed": "Échec de la jonction au match : {error}",
+  "@matchJoinFailed": {
+    "description": "Error when joining match fails",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "tournamentGlobalTitle": "Tournois Mondiaux",
+  "@tournamentGlobalTitle": {
+    "description": "App bar title for tournament dashboard"
+  },
+  "tournamentNoTournaments": "Aucun tournoi",
+  "@tournamentNoTournaments": {
+    "description": "Message when there are no tournaments in builder"
+  },
+  "tournamentFilterLabel": "Filtre :",
+  "@tournamentFilterLabel": {
+    "description": "Label before tournament filter chips"
+  },
+  "tournamentFilterAll": "Tous",
+  "@tournamentFilterAll": {
+    "description": "Filter chip - all"
+  },
+  "tournamentFilterRegistration": "Inscription",
+  "@tournamentFilterRegistration": {
+    "description": "Filter chip - registration"
+  },
+  "tournamentFilterQualifiers": "Qualifications",
+  "@tournamentFilterQualifiers": {
+    "description": "Filter chip - qualifiers"
+  },
+  "tournamentFilterFinal": "Finale",
+  "@tournamentFilterFinal": {
+    "description": "Filter chip - final"
+  },
+  "tournamentFilterCompleted": "Terminés",
+  "@tournamentFilterCompleted": {
+    "description": "Filter chip - completed"
+  },
+  "tournamentEmptyTitle": "Aucun tournoi pour le moment",
+  "@tournamentEmptyTitle": {
+    "description": "Title when tournaments list is empty"
+  },
+  "tournamentCreateNew": "Créer un nouveau tournoi",
+  "@tournamentCreateNew": {
+    "description": "Button label to create new tournament"
+  },
+  "tournamentStagesSectionTitle": "Étapes",
+  "@tournamentStagesSectionTitle": {
+    "description": "Title for stages section"
+  },
+  "tournamentTeamsSectionTitle": "Équipes ({count}/{max})",
+  "@tournamentTeamsSectionTitle": {
+    "description": "Title for teams section with counts",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "tournamentViewAllTeams": "Voir toutes les équipes ({count})",
+  "@tournamentViewAllTeams": {
+    "description": "Button text to view all teams",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "tournamentBracketTitle": "Tableau",
+  "@tournamentBracketTitle": {
+    "description": "Title for bracket section"
+  },
+  "tournamentBracketUnavailable": "Le tableau n'est pas encore disponible",
+  "@tournamentBracketUnavailable": {
+    "description": "Message when bracket is unavailable"
+  },
+  "tournamentViewBracket": "Voir le tableau",
+  "@tournamentViewBracket": {
+    "description": "Button to view bracket"
+  },
+  "tournamentStart": "Démarrer le tournoi",
+  "@tournamentStart": {
+    "description": "Button to start tournament"
+  },
+  "back": "Retour",
+  "@back": {
+    "description": "Generic back button label"
+  },
+  "tournamentStatusRegistration": "Inscription",
+  "@tournamentStatusRegistration": {
+    "description": "Status label for registration"
+  },
+  "tournamentStatusQualifiers": "Qualifications",
+  "@tournamentStatusQualifiers": {
+    "description": "Status label for qualifiers"
+  },
+  "tournamentStatusPlayoffs": "Playoffs",
+  "@tournamentStatusPlayoffs": {
+    "description": "Status label for playoffs/final stage"
+  },
+  "tournamentStatusFinal": "Finale",
+  "@tournamentStatusFinal": {
+    "description": "Status label for final stage"
+  },
+  "tournamentStatusCompleted": "Terminés",
+  "@tournamentStatusCompleted": {
+    "description": "Status label for completed tournaments"
+  },
+  "tournamentStatusCancelled": "Annulés",
+  "@tournamentStatusCancelled": {
+    "description": "Status label for cancelled tournaments"
+  },
+  "tournamentMatchStatusScheduled": "Programmé",
+  "@tournamentMatchStatusScheduled": {
+    "description": "Match status scheduled"
+  },
+  "tournamentMatchStatusInProgress": "En cours",
+  "@tournamentMatchStatusInProgress": {
+    "description": "Match status in progress"
+  },
+  "tournamentMatchStatusCompleted": "Terminé",
+  "@tournamentMatchStatusCompleted": {
+    "description": "Match status completed"
+  },
+  "tournamentMatchStatusForfeit": "Forfait",
+  "@tournamentMatchStatusForfeit": {
+    "description": "Match status forfeit"
+  },
+  "tournamentMatchStatusCancelled": "Annulé",
+  "@tournamentMatchStatusCancelled": {
+    "description": "Match status cancelled"
+  },
+  "tournamentStatsTeams": "Équipes",
+  "@tournamentStatsTeams": {
+    "description": "Label for teams stat"
+  },
+  "tournamentStatsStages": "Étapes",
+  "@tournamentStatsStages": {
+    "description": "Label for stages stat"
+  },
+  "tournamentStatsType": "Type",
+  "@tournamentStatsType": {
+    "description": "Label for type stat"
+  },
+  "tournamentTypeSingleElimination": "Élimination Simple",
+  "@tournamentTypeSingleElimination": {
+    "description": "Tournament type single elimination"
+  },
+  "tournamentTypeDoubleElimination": "Élimination Double",
+  "@tournamentTypeDoubleElimination": {
+    "description": "Tournament type double elimination"
+  },
+  "tournamentTypeSwiss": "Suisse",
+  "@tournamentTypeSwiss": {
+    "description": "Tournament type Swiss"
+  },
+  "tournamentTypeRoundRobin": "Round Robin",
+  "@tournamentTypeRoundRobin": {
+    "description": "Tournament type round robin"
+  },
+  "stageRoundProgress": "Ronde {current}/{total}",
+  "@stageRoundProgress": {
+    "description": "Stage round progress label",
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "matchesLabel": "Matchs",
+  "@matchesLabel": {
+    "description": "Label for number of matches"
+  },
+  "stageStatusNotStarted": "Non démarré",
+  "@stageStatusNotStarted": {
+    "description": "Stage status not started"
+  },
+  "stageStatusInProgress": "En cours",
+  "@stageStatusInProgress": {
+    "description": "Stage status in progress"
+  },
+  "stageStatusCompleted": "Terminé",
+  "@stageStatusCompleted": {
+    "description": "Stage status completed"
+  },
+  "relativeInDays": "Dans {days} jours",
+  "@relativeInDays": {
+    "description": "Relative time in days (future)",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "relativeInHours": "Dans {hours} heures",
+  "@relativeInHours": {
+    "description": "Relative time in hours (future)",
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "relativeInMinutes": "Dans {minutes} minutes",
+  "@relativeInMinutes": {
+    "description": "Relative time in minutes (future)",
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "relativeStarted": "Démarré",
+  "@relativeStarted": {
+    "description": "Label when event has started"
+  },
+  "relativeNow": "Maintenant",
+  "@relativeNow": {
+    "description": "Label for now"
+  },
+  "matchTitle": "Match",
+  "@matchTitle": {
+    "description": "Title for match screen"
+  },
+  "matchStart": "Démarrer le match",
+  "@matchStart": {
+    "description": "Button label to start match"
+  },
+  "matchJoin": "Rejoindre le match",
+  "@matchJoin": {
+    "description": "Button label to join match"
+  },
+  "samplePuzzleLoaded": "Un puzzle d'entraînement a été chargé",
+  "@samplePuzzleLoaded": {
+    "description": "Message shown when a practice puzzle is loaded"
+  }
+}
