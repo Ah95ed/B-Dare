@@ -1,3 +1,21 @@
 {
-    "cmake.sourceDirectory": "D:/mysterylink/windows"
+    "cmake.sourceDirectory": "D:/mysterylink/windows",
+    "chat.extensionUnification.enabled": true,
+    "cmake.configureOnOpen": true,
+    "cmake.generator": "Visual Studio 17 2022",
+    "cmake.buildDirectory": "D:/mysterylink/windows/build",
+    "cmake.configureSettings": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+    },
+    "files.watcherExclude": {
+        "**/build/**": true,
+        "**/cmake-build-debug/**": true,
+        "**/cmake-build-release/**": true,
+        "**/CMakeFiles/**": true,
+        "**/Debug/**": true,
+        "**/Release/**": true
+    }
+   
+        
 }

@@ -73,7 +73,8 @@ class PuzzleSelectionService {
     return const PuzzleSelectionOutcome();
   }
 
-  Future<String?> _recommendedCategoryForPhase(String? requestedCategory) async {
+  Future<String?> _recommendedCategoryForPhase(
+      String? requestedCategory) async {
     if (requestedCategory != null && requestedCategory.isNotEmpty) {
       return requestedCategory;
     }
