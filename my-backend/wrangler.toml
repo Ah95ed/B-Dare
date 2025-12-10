@@ -1,0 +1,43 @@
+name = "mystery-link-backend"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+# Add your Cloudflare account id here (replace the placeholder)
+# You can find `account_id` in the Cloudflare dashboard (Overview > API)
+account_id = "ea4af2dab95733aa525d7a8ac1578691"
+
+[durable_objects]
+bindings = [
+  { name = "GAME_ROOM", class_name = "GameRoom", script_name = "mystery-link-backend" },
+  { name = "TOURNAMENT_ROOM", class_name = "TournamentRoom", script_name = "mystery-link-backend" }
+]
+
+# KV Namespace for game state persistence
+[[kv_namespaces]]
+binding = "GAME_STATE_KV"
+id = "2b5d73948b4f49ad9022be30ebaf9925"
+
+[[kv_namespaces]]
+binding = "TOURNAMENT_KV"
+id = "7e78087fe62849bb818161187faade21"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["GameRoom", "TournamentRoom"]
+
+[env.production.vars]
+ENVIRONMENT = "production"
+# Replace with a comma-separated list of your allowed production origins
+ALLOWED_ORIGINS = "https://example.com"
+# Set JWT_SECRET securely via `wrangler secret put JWT_SECRET`
+
+# For local development
+[dev]
+port = 8787
+local_protocol = "http"
+
+# Optional: define routes to bind a custom domain (uncomment and set values)
+# Example to route all traffic from game.example.com to this worker:
+# [[routes]]
+# pattern = "game.example.com/*"
+# zone_id = "YOUR_ZONE_ID"

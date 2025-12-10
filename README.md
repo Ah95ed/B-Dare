@@ -131,58 +131,109 @@ See [docs/TESTING_GUIDE.md](docs/TESTING_GUIDE.md) for comprehensive testing gui
 flutter test
 
 # Run with coverage
-flutter test --coverage
+**نظرة عامة**
+- **اسم المشروع:**: `Mystery Link` — لعبة أحجية تربط عنصرين عبر سلسلة من الروابط الوسيطة.
+- **هدف الوثيقة:**: هذا `README.md` يقدّم تحليلاً تفصيليًا لكود المشروع، آليات اللعب، البنية الداخلية، وكيفية تشغيل وتوسيع اللعبة.
 
-# Run specific test file
-flutter test test/features/game/presentation/bloc/game_bloc_test.dart
+**ملخص اللعبة**
+- **الفكرة الأساسية:**: اللاعب يبدأ بعنصر بداية (`start`) وعنصر نهاية (`end`) ويجب عليه اختيار سلسلة من الروابط (خطوات) تؤدي من البداية إلى النهاية عبر عدد محدد من الروابط (`linksCount`). كل خطوة تعرض خيارات؛ اختر الخيار الصحيح لتتقدم.
+- **أنماط اللعبة:**: النمط الافتراضي هو `Mystery Link`، لكن الكود يدعم أنماطًا متعددة مثل: `Memory Flip`, `Spot the Odd`, `Sort & Solve`, `Story Tiles`, `Shadow Match`, `Emoji Circuit`, `Cipher Tiles`, `Spot the Change`, `Color Harmony`, `Puzzle Sentence`.
+- **عناصر اللعبة:**: كل لغز (`Puzzle`) يحتوي على: `start`, `end`, عدد الروابط (`linksCount`), قائمة `steps` مع خيارات لكل خطوة، وحد زمني إجمالي (`timeLimit`).
+
+**آليات اللعب الأساسية**
+- **الخطوات والترتيب:**: اللعبة تعمل خطوة بخطوة (turn-based). لكل خطوة مجموعة من `StepOption` تحتوي `LinkNode` ووسم `isCorrect`.
+- **الزمن والنقاط:**: لكل لغز زمن إجمالي (`timeLimit`). يوجد مكافآت زمنية إذا كانت الإجابة سريعة، وعقوبات عند استخدام تلميحات أو إجابات خاطئة. حساب النقاط يتم عبر `GameConstants` و`GameEngine` المناسب.
+- **المساعدة والتدرج:**: هناك وضع `guided` يدعم تلميحات (hints) ويخفّض نقاط الخطوة عند استخدامها.
+- **إنهاء اللعبة:**: تنتهي اللعبة عند استكمال عدد الروابط أو نفاد الوقت؛ تُسجّل نتيجة اللاعب عبر `ProgressionService` وواجهة التعلم التكيّفي (`AdaptiveLearningRepository`).
+
+**بنية المشروع (مستوى عالٍ)**
+- **الطبقات الرئيسية:**
+  - **العرض (presentation):**: واجهات الشاشة، وواجهات المستخدم، وBLoC للحركة. المسار: `lib/features/game/presentation`.
+  - **النطاق/الدومين (domain):**: الكيانات (entities) مثل `Puzzle`, `PuzzleStep`, `LinkNode`, واجهات المستودعات، ومحركات اللعبة (Game Engines). المسار: `lib/features/game/domain`.
+  - **البيانات (data):**: مصادر البيانات ونماذج JSON والمستودعات. المسار: `lib/features/game/data`.
+  - **الموارد العامة:**: إعدادات التطبيق والثيمات والراوتر والتوطين في `lib/core` و`lib/l10n`.
+
+**مكونات أساسية (أسماء وملف موقعها)**
+- **دخول التطبيق:**: `lib/main.dart` — يهيئ `RepositoryProvider` و`BlocProvider` ويشغّل التطبيق.
+- **BLoC اللعبة:**: `lib/features/game/presentation/bloc/game_bloc.dart` — منطق الحالة، التعامل مع أحداث اللعبة (`StepOptionSelected`, `TimerTicked`, إلخ.).
+- **نموذج اللغز:**: `lib/features/game/data/models/puzzle_model.dart` وملف `puzzle_step_model.dart` — يعرّف كيف تُحمّل وتنُسق بيانات الألغاز من `JSON`.
+- **مصدر الألغاز محليًا:**: `lib/features/game/data/datasources/local_puzzle_datasource.dart` — يحمّل `assets/data/puzzles.json` ويفحص صحة البيانات.
+- **مستودع الألغاز:**: `lib/features/game/data/repositories/puzzle_repository.dart` — caching، فلترة، اختيار عشوائي، وواجهات بحث.
+- **محركات اللعبة:**: `lib/features/game/domain/services/engines/*` و`game_engine_factory.dart` — كل نمط له `GameEngine` منفصل (تنفيذ القواعد، التحقق من الحركات وحساب النقاط).
+- **كيانات النطاق:**: `lib/features/game/domain/entities/` — `puzzle.dart`, `link_node.dart`, `puzzle_step.dart`, `game_type.dart`.
+
+**تنسيق ملفات الألغاز (JSON)**
+- **الموقع المتوقع:**: `assets/data/puzzles.json`.
+- **مخطط موجز:** كل مدخل يتضمن الحقول الأساسية التالية:
+  - `id`: معرف السجل.
+  - `gameType`: اسم النمط (مثل `mysteryLink`).
+  - `type`: تمثيل العقدة (`text`, `image`, `icon`, `event`).
+  - `start`, `end`: كائنات `LinkNode` (حقل `id`, `label`, `representationType`, `imagePath` أو `iconName`, و`labels` للدولية).
+  - `linksCount`: عدد الروابط المتوقعة.
+  - `timeLimit`: زمن اللغز بالثواني.
+  - `steps`: مصفوفة من الخطوات؛ كل خطوة لها `order` و`options` التي تحتوي `node` و`isCorrect`.
+
+**التوطين (i18n)**
+- المشروع يستخدم حزمة `flutter_localizations` وملفات `.arb` في `lib/l10n/` (مثال: `app_ar.arb`, `app_en.arb`). تسميات العقد (`LinkNode.labels`) تستعمل للنصوص المحلية داخل بيانات الألغاز.
+
+**التبعيات المهمة**
+- **حزمة الحالة:**: `flutter_bloc`, `equatable`.
+- **التخزين:**: `shared_preferences`.
+- **التوطين:**: `intl`.
+- **وسائط / واجهة المستخدم:**: `lottie`, `google_fonts`.
+- **تعدد اللاعبين / شبكات:**: `web_socket_channel`, `http` (مؤشرات لوجود دعم للـ multiplayer عبر WebSocket أو API).
+- **أدوات التطوير:**: `build_runner`, `json_serializable`.
+
+**كيفية التشغيل محليًا**
+- **المتطلبات:**: Flutter SDK (مشغّل لـ `sdk: '>=3.0.0 <4.0.0'`).
+- **الأوامر الأساسية:**
+  - للحصول على الحزم:
+
+```powershell
+flutter pub get
 ```
 
-## Building and Deployment
+  - لتشغيل التطبيق على جهاز متصل أو محاكي:
 
-See [docs/BUILD_GUIDE.md](docs/BUILD_GUIDE.md) for detailed build and deployment instructions.
-
-### Quick Build Commands
-
-```bash
-# Windows Release
-flutter build windows --release
-
-# Android APK
-flutter build apk --release
-
-# Android App Bundle
-flutter build appbundle --release
+```powershell
+flutter run
 ```
 
-## Documentation
+  - لتشغيل الاختبارات (إن وُجدت):
 
-- [Testing Guide](docs/TESTING_GUIDE.md) - Comprehensive testing procedures
-- [Build Guide](docs/BUILD_GUIDE.md) - Building and deployment instructions
-- [Innovation Roadmap](INNOVATION_ROADMAP_2025_2035.md) - Future features and enhancements
-- [Priority Implementation Guide](PRIORITY_IMPLEMENTATION_GUIDE.md) - Implementation priorities
-- [Use Cases and Examples](USE_CASES_AND_EXAMPLES.md) - Real-world usage scenarios
+```powershell
+flutter test
+```
 
-## Future Enhancements
+**إرشادات لإضافة لغز جديد**
+- أضف مدخلاً جديدًا إلى `assets/data/puzzles.json` وفق نموذج `PuzzleModel`.
+- تأكد من ضبط `gameType`, `linksCount`, و`steps` مع `isCorrect` واحد على الأقل لكل خطوة.
+- شغّل `flutter pub get` ثم شغّل التطبيق وتحقق من ظهور اللغز في اختيار المستويات أو الوضع العشوائي.
 
-See [INNOVATION_ROADMAP_2025_2035.md](INNOVATION_ROADMAP_2025_2035.md) for comprehensive future plans including:
+**كيفية إضافة نمط لعبة جديد (Engine)**
+- 1) أنشئ `GameEngine` جديد في `lib/features/game/domain/services/engines/` عبر تنفيذ `GameEngine`.
+- 2) أضف استيرادًا للمحرك إلى `game_engine_factory.dart` وأضف حالة في `_createEngine` لإرجاع المحرك.
+- 3) إن لزم، حدّث `Puzzle` و`PuzzleModel` لإضافة حقول خاصة بالنمط (`gameTypeData`).
 
-- **AI-Powered Features**: Adaptive learning, AI puzzle generation, thinking assistant
-- **Multisensory Learning**: AR mode, audio mode, haptic feedback
-- **Advanced Reasoning**: Multi-step reasoning, pattern recognition, critical thinking
-- **Social Learning**: Collaborative building, cognitive challenges, creator community
-- **Educational Integration**: Curriculum mode, classroom mode, real-world problems
-- **Emerging Technologies**: VR mode, blockchain integration, IoT connectivity
+**ملاحظات عن التقدّم والبيانات**
+- السجلات تمت كتابتها بحيث تكون قابلة للتوسعة (Adaptive Learning، Progression service، Family session storage لللعب الجماعي).
+- مصدر الألغاز المحلي يتعامل مع JSON غير صالح ويعطي رسائل خطأ مفسّرة (`PuzzleDataException`).
 
-Current roadmap focuses on:
-- ✅ 30+ diverse puzzles
-- ✅ Enhanced UX with helpful messages
-- ✅ Splash screen
-- ✅ Automated tests
-- 🔄 Adaptive learning system (Phase 1 - 2025)
-- 🔄 Thinking assistant (Phase 1 - 2025)
-- 🔄 Multi-step reasoning (Phase 1 - 2025)
+**ملفات مهمة للمراجعة السريعة**
+- `lib/main.dart`: تهيئة التطبيق وDI.
+- `lib/features/game/presentation/bloc/game_bloc.dart`: منطق اللعبة.
+- `lib/features/game/domain/services/game_engine_factory.dart`: ربط المحركات.
+- `lib/features/game/data/datasources/local_puzzle_datasource.dart`: تحميل الألغاز من `assets/data/puzzles.json`.
 
-## License
+**أفكار لتحسين/توسيع**
+- إضافة محرر ألغاز داخل التطبيق لتسهيل الإنتاج.
+- إضافة اختبارات وحدية ومحاكاة لمحركات الألعاب (وذلك عبر `bloc_test` و`mocktail`).
+- دعم تحميل ألغاز من السحابة ومزامنة التقدم بين الأجهزة.
 
-This project is licensed under the MIT License.
+---
+إذا ترغب، أستطيع الآن:
+- توليد مثال جاهز لمُدخل `puzzles.json` يضم لغزًا من نوع `Mystery Link`.
+- تشغيل فحص سطري للملف `assets/data/puzzles.json` إن أردت مني قراءته وتحليله.
+
+انتهى التحليل — أخبرني أي إضافة تريد (مثال: مثال JSON، اختبارات، أو توضيح أي ملف محدد). 
 

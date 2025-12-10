@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Mystery Link - Test Client</title>
+</head>
+
+<body>
+    <h2>Test client for Mystery Link Worker</h2>
+    <button id="create">Create Room</button>
+    <pre id="out"></pre>
+
+    <script>
+        const out = document.getElementById('out');
+        const btn = document.getElementById('create');
+        const workerBase = location.origin; // open this file from the worker domain or change to worker URL
+
+        function log(...args) {
+            out.textContent += args.join(' ') + '\n';
+        }
+
+        btn.addEventListener('click', async () => {
+            try {
+                const resp = await fetch(workerBase + '/api/create-room', { method: 'POST' });
+                const data = await resp.json();
+                log('create-room response:', JSON.stringify(data, null, 2));
+                if (data.wsUrl) {
+                    connectWs(data.wsUrl);
+                }
+            } catch (e) {
+                log('error:', e);
+            }
+        });
+
+        function connectWs(wsUrl) {
+            log('Connecting to', wsUrl);
+            const ws = new WebSocket(wsUrl);
+            ws.addEventListener('open', () => log('ws open'));
+            ws.addEventListener('message', (ev) => log('ws message:', ev.data));
+            ws.addEventListener('close', () => log('ws closed'));
+            ws.addEventListener('error', (e) => log('ws error', e));
+
+            // send a test message when open
+            ws.addEventListener('open', () => ws.send(JSON.stringify({ type: 'hello', payload: 'from test client' })));
+        }
+    </script>
+</body>
+
+</html>
